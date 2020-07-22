@@ -1,7 +1,207 @@
 ﻿<!DOCTYPE html>
 <html>
-<body>
-<h1>Yan Song</h1>
-<p>This is Yan Song's website.</p>
+<head>
+	<link rel="icon" type="img/png" href="img/yan-logo.png"/>
+	<title>Yan Song</title>
+	<style>
+		.vl {margin-left:5px;border-left:1px solid grey; height:320px;}
+		.nav {font-family:verdana; font-size:10pt; color:#008FFF; cursor:pointer; textDecoration:none;}
+		.sep {color:#EFEFEF;}
+		.lnk {font-family:verdana;font-size:10pt;}
+		.ttl {font-family:verdana;font-size:11pt;}
+		.bbk {font-family:verdana;font-size:10pt;font-style:italic;}
+	</style>
+</head>
+<body bgcolor="#FDFDFD">
+	<table border="0">
+		<tr>
+			<td style="font-family:verdana;font-size:8pt">
+				<img src="img/yan-sw.jpeg" height="320">
+				<br>
+				<!--(By the Rattlesnake Lake, WA)-->
+			</td>
+			<td width="10">
+				<div class="vl"></div>
+			</td>
+			<td valign="top" style="font-family:verdana;font-size:10pt;">
+				<a style="font-family:garamond;font-size:30pt">Yan SONG</a>
+				<br>
+				<a style="font-family:garamond;font-size:20pt"> ( 宋彦 )</a>
+				<br>
+				
+				<br>
+				<a class="ttl">Associate Professor</a>
+				<br>
+				<a href="http://sds.cuhk.edu.cn" class="lnk">School of Data Science</a>, <a href="http://cuhk.edu.cn" class="lnk">CUHK-SZ</a>
+				<br>
+				<div style="height:7px;"></div>
+				<a class="ttl">Affiliate Faculty</a>
+				<br>
+				<a href="https://linguistics.washington.edu" class="lnk">Department of Linguistics</a>, <a href="https://www.washington.edu" class="lnk">UW</a>
+				<br>
+				<div style="height:7px;"></div>
+				<a class="ttl">Chief Scientist</a>
+				<br>
+				<a href="http://dawanqu.ai" class="lnk">Sinovation Ventures AI Institute (Shenzhen)</a>
+				<br>
+				<br>
+				<b>Email</b>: xxxxyyy AT cuhk.edu.cn
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(xxxx is "song", yyy is "yan")
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	<table width="800" border="0" style="font-family:verdana;font-size:11pt;">
+		<tr>
+			<td><a class="nav" onclick="nav_click('int');">SHORT BIO</a></td>
+			<td width="20px" class="sep">|</td>
+			<td><a class="nav" onclick="nav_click('pub');">PUBLICATIONS</a></td>
+			<td width="20px" class="sep">|</td>
+			<td><a class="nav" onclick="nav_click('sft');">SOFTWARE</a></td>
+			<td width="20px" class="sep">|</td>
+			<td><a class="nav" onclick="nav_click('tch');">TEACHING</a></td>
+			<td width="20px" class="sep">|</td>
+			<td><a class="nav" onclick="nav_click('oth');">OTHER</a></td>
+			<td width="200"></td>
+		</tr>
+		<tr>
+			<td colspan="10">
+				<br>
+				<div class="lnk" id="int">
+					I am an associate professor at the <a href="http://sds.cuhk.edu.cn" class="lnk">School of Data Science</a>, <a href="http://cuhk.edu.cn" class="lnk">The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</a>.
+					Before joining CUHS-SZ, I was the director of <a href="http://dawanqu.ai" class="lnk">Sinovation Ventures AI Institute (Shenzhen)</a> and 
+					worked in Microsoft and Tencent prior to Sinovation Ventures.
+					Currently I am also an <a href="https://linguistics.washington.edu/people/yan-song" class="lnk">affiliate faculty</a> at <a href="https://linguistics.washington.edu" class="lnk">Department of Linguistics</a>, <a href="https://www.washington.edu" class="lnk">University of Washington (UW)</a>,
+					and the chief scientist at <a href="http://dawanqu.ai" class="lnk">Sinovation Ventures AI Institute (Shenzhen)</a>.
+					<br>
+					<br>
+					My research intersts focus on natural language processing (NLP), especially text representation learning, language understanding and generation, information extraction and retrieval, etc.
+					I am particularly interested in medical NLP, and studied for years on applying NLP to different medical scenarios.
+					Many of my previous research have been transferred into products or open resources that facilitate academia and industry applications,
+					e.g., <a href="https://www.msxiaobing.com/" class="lnk">Microsoft XiaoICE</a>, <a href="https://ai.tencent.com/ailab/nlp/en/embedding.html" class="lnk">Tencent Chinese word embeddings</a>, etc.
+					Recently my team has released a new Chinese pre-trained models (ZEN) and the related codes, which can be found <a href="https://github.com/sinovation/zen" class="lnk">here</a>.
+				</div>
+				
+				<div class="lnk" id="pub" style="display:none;">
+					<br>
+					<a style="font-family:garamond;font-size:15pt;"><b>2020</b></a>
+					<li>Yuanhe Tian, Yan Song, Fei Xia, Tong Zhang and Yonggang Wang. Improving Chinese Word Segmentation with Wordhood Memory Networks. in <a class="bbk">ACL-2020</a> [<a href="https://www.aclweb.org/anthology/2020.acl-main.734.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/2020.acl-main.734.bib" class="lnk">bib</a>][<a href="https://github.com/svaigba/wmseg" class="lnk">code</a>] </li>
+					<li>Yuanhe Tian, Yan Song, Xiang Ao, Fei Xia, Xiaojun Quan, Tong Zhang and Yonggang Wang. Joint Chinese Word Segmentation and Part-of-speech Tagging via Two-way Attentions of Auto-analyzed Knowledge. in <a class="bbk">ACL-2020</a> [<a href="https://www.aclweb.org/anthology/2020.acl-main.735.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/2020.acl-main.735.bib" class="lnk">bib</a>][<a href="https://github.com/svaigba/twasp" class="lnk">code</a>] </li>
+					<li>Kun Li, Chengbo Chen, Xiaojun Quan, Qing Ling and Yan Song. Conditional Augmentation for Aspect Term Extraction via Masked Sequence-to-Sequence Generation. in <a class="bbk">ACL-2020</a> [<a href="https://www.aclweb.org/anthology/2020.acl-main.631.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/2020.acl-main.631.bib" class="lnk">bib</a>] </li>
+					<li>Kun Xu, Linfeng Song, Yansong Feng, Yan Song, Dong Yu. Coordinated Reasoning for Cross-Lingual Knowledge Graph Alignment. in <a class="bbk">AAAI-2020</a> [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6476/6332" class="lnk">pdf</a>][<a href="bib/2020-aaai.bib" class="lnk">bib</a>] </li>
+					<li>Nan Wang, Yan Song, Fei Xia. Studying Challenges in Medical Conversation with Structured Annotation. in <a class="bbk">the First Workshop on Natural Language Processing for Medical Conversations</a> [<a href="https://www.aclweb.org/anthology/2020.nlpmc-1.3.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/2020.nlpmc-1.3.bib" class="lnk">bib</a>] </li>
+					<li>Shizhe Diao, Yan Song, Tong Zhang. Keyphrase Generation with Cross-Document Attention. in <a class="bbk">arXiv preprint</a>:2004.09800 [<a href="https://arxiv.org/pdf/2004.09800" class="lnk">pdf</a>][<a href="bib/2020-arxiv.2004.09800.bib" class="lnk">bib</a>][<a href="https://github.com/svaigba/cdkgen" class="lnk">code</a>] </li>
+					<br>
+					<br>
+					<a style="font-family:garamond;font-size:15pt;"><b>2019</b></a>
+					<li>Hongming Zhang, Jiaxin Bai, Yan Song, Kun Xu, Changlong Yu, Yangqiu Song, Wilfred Ng, Dong Yu. Multiplex Word Embeddings for Selectional Preference Acquisition. in <a class="bbk">EMNLP-2019</a> [<a href="https://www.aclweb.org/anthology/D19-1528.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D19-1528.bib" class="lnk">bib</a>][<a href="https://github.com/HKUST-KnowComp/MWE" class="lnk">code</a>]
+					<li>Xintong Yu, Hongming Zhang, Yangqiu Song, Yan Song, Changshui Zhang. What You See is What You Get: Visual Pronoun Coreference Resolution in Dialogues. in <a class="bbk">EMNLP-2019</a> [<a href="https://www.aclweb.org/anthology/D19-1516.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D19-1516.bib" class="lnk">bib</a>][<a href="https://github.com/HKUST-KnowComp/Visual_PCR" class="lnk">code</a>]
+					<li>Ling Luo, Xiang Ao, Yan Song, Feiyang Pan, Min Yang, Qing He. Reading Like HER: Human Reading Inspired Extractive Summarization. in <a class="bbk">EMNLP-2019</a> [<a href="https://www.aclweb.org/anthology/D19-1300.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D19-1300.bib" class="lnk">bib</a>]
+					<li>Miaofeng Liu, Yan Song, Hongbin Zou, Tong Zhang. Reinforced Training Data Selection for Domain Adaptation. in <a class="bbk">ACL-2019</a> [<a href="https://www.aclweb.org/anthology/P19-1189.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/P19-1189.bib" class="lnk">bib</a>][<a href="https://github.com/timerstime/SDG4DA" class="lnk">code</a>]
+					<li>Hongming Zhang, Yan Song, Yangqiu Song, Dong Yu. Knowledge-aware Pronoun Coreference Resolution. in <a class="bbk">ACL-2019</a> [<a href="https://www.aclweb.org/anthology/P19-1083.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/P19-1083.bib" class="lnk">bib</a>][<a href="https://github.com/HKUST-KnowComp/Pronoun-Coref-KG" class="lnk">code</a>]
+					<li>Kun Xu, Liwei Wang, Mo Yu, Yansong Feng, Yan Song, Zhiguo Wang, Dong Yu. Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network. in <a class="bbk">ACL-2019</a> [<a href="https://www.aclweb.org/anthology/P19-1304.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/P19-1304.bib" class="lnk">bib</a>]
+					<li>Ling Luo, Xiang Ao, Yan Song, Jinyao Li, Xiaopeng Yang, Qing He, Dong Yu. Unsupervised Neural Aspect Extraction with Sememes. In <a class="bbk">IJCAI-2019</a> [<a href="https://www.ijcai.org/Proceedings/2019/0712.pdf" class="lnk">pdf</a>][<a href="https://www.ijcai.org/proceedings/2019/bibtex/712" class="lnk">bib</a>]
+					<li>Hongming Zhang, Yan Song, Yangqiu Song. Incorporating Context and External Knowledge for Pronoun Coreference Resolution. in <a class="bbk">NAACL-2019</a> [<a href="https://www.aclweb.org/anthology/N19-1093.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/N19-1093.bib" class="lnk">bib</a>][<a href="https://github.com/HKUST-KnowComp/Pronoun-Coref" class="lnk">code</a>]
+					<li>Zhaofeng Wu, Yan Song, Sicong Huang, Yuanhe Tian, and Fei Xia. A Hybrid Approach to Biomedical Natural Language Inference. in <a class="bbk">BioNLP-2019</a> [<a href="https://www.aclweb.org/anthology/W19-5044.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W19-5044.bib" class="lnk">bib</a>]
+					<li>Yuanhe Tian, Weicheng Ma, Fei Xia, Yan Song. ChiMed: A Chinese Medical Corpus for Question Answering. in <a class="bbk">BioNLP-2019</a> [<a href="https://www.aclweb.org/anthology/W19-5027.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W19-5027.bib" class="lnk">bib</a>]
+					<li>Dingmin Wang, Meng Fang, Yan Song, Juntao Li. Bridging the Gap: Improve Part-of-speech Tagging for Chinese Social Media Texts with Foreign Words. in <a class="bbk">SemDeep-5</a> [<a href="https://www.aclweb.org/anthology/W19-5803.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W19-5803.bib" class="lnk">bib</a>]
+					<li>Shizhe Diao, Jiaxin Bai, Yan Song, Tong Zhang, Yonggang Wang. ZEN: Pre-training Chinese Text Encoder Enhanced by N-gram Representations. <a class="bbk">arXiv preprint</a>:1911.00720 [<a href="https://arxiv.org/pdf/1911.00720" class="lnk">pdf</a>][<a href="bib/2019-arxiv.1911.00720.bib" class="lnk">bib</a>][<a href="https://github.com/sinovation/zen" class="lnk">code</a>]
+					<li>Guoyin Wang, Yan Song, Dong Yu. Learning Word Embeddings with Domain Awareness. in <a class="bbk">arXiv preprint</a>:1906.03249 [<a href="https://arxiv.org/pdf/1906.03249" class="lnk">pdf</a>][<a href="bib/2019-arxiv.1906.03249.bib" class="lnk">bib</a>][<a href="https://github.com/guoyinwang/EMBDA" class="lnk">code</a>]
+					<br>
+					<br>
+					<a style="font-family:garamond;font-size:15pt;"><b>2018</b></a>
+					<li>Dingmin Wang, Yan Song, Jing Li, Jialong Han, and Haisong Zhang. A Hybrid Approach to Automatic Corpus Generation for Chinese Spelling Check. in <a class="bbk">EMNLP-2018</a> [<a href="https://www.aclweb.org/anthology/D18-1273.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D18-1273.bib" class="lnk">bib</a>]
+					<li>Jichuan Zeng, Jing Li, Yan Song, Cuiyun Gao, Michael R. Lyu, and Irwin King. Topic Memory Networks for Short Text Classification. in <a class="bbk">EMNLP-2018</a> [<a href="https://www.aclweb.org/anthology/D18-1351.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D18-1351.bib" class="lnk">bib</a>]
+					<li>Juntao Li, Yan Song, Haisong Zhang, Dongmin Chen, Shuming Shi, and Rui Yan. Generating Classical Chinese Poems via Conditional Variational Autoencoder and Adversarial Training. in <a class="bbk">EMNLP-2018</a> [<a href="https://www.aclweb.org/anthology/D18-1423.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D18-1423.bib" class="lnk">bib</a>]
+					<li>Xiuying Chen, Shen Gao, Chongyang Tao, Yan Song, Dongyan Zhao, and Rui Yan. Iterative Document Representation Learning Towards Summarization with Polishing. in <a class="bbk">EMNLP-2018</a> [<a href="https://www.aclweb.org/anthology/D18-1442.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/D18-1442.bib">bib</a>]
+					<li>Jing Li, Yan Song, Zhongyu Wei, KF Wong. A Joint Model of Conversational Discourse and Latent Topics on Microblogs. <a class="bbk">Computational Linguistics</a> [<a href="https://www.aclweb.org/anthology/J18-4008.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/J18-4008.bib" class="lnk">bib</a>]
+					<li>Yan Song, Shuming Shi. Complementary Learning of Word Embeddings, in <a class="bbk">IJCAI-2018</a> [<a href="https://www.ijcai.org/proceedings/2018/0607.pdf" class="lnk">pdf</a>][<a href="https://www.ijcai.org/proceedings/2018/bibtex/607" class="lnk">bib</a>]
+					<li>Yan Song, Shuming Shi, Jing Li. Joint Learning Embeddings for Chinese Words and their Components via Ladder Structured Networks. in <a class="bbk">IJCAI-2018</a> [<a href="https://www.ijcai.org/proceedings/2018/0608.pdf" class="lnk">pdf</a>][<a href="https://www.ijcai.org/proceedings/2018/bibtex/608" class="lnk">bib</a>]
+					<li>Jialong Han, Yan Song, Xin Zhao, Shuming Shi, Haisong Zhang. hyperdoc2vec: Distributed Representations of Hypertext Documents. in <a class="bbk">ACL-2018</a> [<a href="https://www.aclweb.org/anthology/P18-1222.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/P18-1222.bib" class="lnk">bib</a>]
+					<li>Yingyi Zhang, Jing Li, Yan Song, Chengzhi Zhang. Encoding Conversation Context for Neural Keyphrase Extraction from Microblog Posts. in <a class="bbk">NAACL-2018</a> [<a href="https://www.aclweb.org/anthology/N18-1151.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/N18-1151.bib" class="lnk">bib</a>]
+					<li>Yan Song, Shuming Shi, Jing Li, Haisong Zhang. Directional Skip-Gram: Explicitly Distinguishing Left and Right Context for Word Embeddings. in <a class="bbk">NAACL-2018</a> [<a href="https://www.aclweb.org/anthology/N18-2028.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/N18-2028.bib" class="lnk">bib</a>][<a href="https://www.aclweb.org/anthology/attachments/N18-2028.Software.zip">code</a>]
+					<li>Nan Wang, Yan Song, Fei Xia. Constructing a Chinese Medical Conversation Corpus Annotated with Conversational Structures and Actions. in <a class="bbk">LREC-2018</a> [<a href="https://www.aclweb.org/anthology/L18-1464.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/L18-1464.bib" class="lnk">bib</a>]
+					<li>Nan Wang, Yan Song, Fei Xia. Coding Structures and Actions with the COSTA Scheme in Medical Conversations. in <a class="bbk">BioNLP-2018</a> [<a href="https://www.aclweb.org/anthology/W18-2309.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W18-2309.bib" class="lnk">bib</a>]
+					<li>Miaofeng Liu, Jialong Han, Haisong Zhang, Yan Song. Domain Adaptation for Disease Phrase Matching with Adversarial Networks. in <a class="bbk">BioNLP-2018</a> [<a href="https://www.aclweb.org/anthology/W18-2315.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W18-2315.bib" class="lnk">bib</a>]
+					<li>Haisong Zhang, Zhangming Chan, Yan Song, Dongyan Zhao, Rui Yan. When Less Is More: Using Less Context Information to Generate Better Utterances in Group Conversations. in <a class="bbk">NLPCC-2018</a> [<a href="https://link.springer.com/chapter/10.1007/978-3-319-99495-6_7" class="lnk">pdf</a>][<a href="https://citation-needed.springer.com/v2/references/10.1007/978-3-319-99495-6_7?format=bibtex&flavour=citation" class="lnk">bib</a>]
+					<li>Jing Li, Yan Song, Haisong Zhang, Shuming Shi. 2018. A Manually Annotated Chinese Corpus for Non-task-oriented Dialogue Systems. in <a class="bbk">arXiv preprint</a>:1805.05542 [<a href="https://arxiv.org/pdf/1805.05542" class="lnk">pdf</a>][<a href="bib/2018-arxiv.1805.05542.bib" class="lnk">bib</a>]
+					<br>
+					<br>
+					<a style="font-family:garamond;font-size:15pt;"><b>2017 and before</b></a> (selected)
+					<li>Yan Song, Chia-Jung Lee, Fei Xia. Learning Word Representations with Regularization from Prior Knowledge. in <a class="bbk">CoNLL-2017</a> [<a href="https://www.aclweb.org/anthology/K17-1016.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/K17-1016.bib" class="lnk">bib</a>]
+					<li>Yan Song, Chia-Jung Lee. Learning User Embeddings from Emails. in <a class="bbk">EACL-2017</a> [<a href="https://www.aclweb.org/anthology/E17-2116.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/E17-2116.bib" class="lnk">bib</a>]
+					<li>Yan Song, Chia-Jung Lee. Embedding Projection for Query Understanding. in <a class="bbk">WWW-2017</a> [<a href="http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p839.pdf" class="lnk">pdf</a>][<a href="bib/2017-www.bib" class="lnk">bib</a>]
+					<li>Chang-Ning Huang, Yan Song. Chinese CCGbank Construction from Tsinghua Chinese Treebank, in <a class="bbk">Journal of Chinese Linguistics Monograph Series</a>. 2015 [<a href="https://www.jstor.org/stable/pdf/26455289.pdf?seq=1" class="lnk">pdf</a>][<a href="https://www.jstor.org/citation/text/10.2307/26455289?refreqid=excelsior%3A287b15612fa0a572b5de2f451ed7ae64" class="lnk">bib</a>]
+					<li>Yan Song and Fei Xia, Modern Chinese Helps Archaic Chinese Processing: Finding and Exploiting the Shared Properties. in <a class="bbk">LREC-2014</a> [<a href="http://www.lrec-conf.org/proceedings/lrec2014/pdf/138_Paper.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/L14-1163.bib" class="lnk">bib</a>]
+					<li>Jingfei Du, Yan Song, Chi-Ho Li. Perceptron-based Tagging of Query Boundaries for Chinese Query Segmentation. in <a class="bbk">WWW-2014</a> [<a href="https://dl.acm.org/doi/10.1145/2567948.2577377" class="lnk">pdf</a>][<a href="2014-www.bib" class="lnk">bib</a>]
+					<li>Yan Song and Fei Xia, A Common Case of Jekyll and Hyde: the Synergistic Effect of Using Divided Source Training Data for Feature Augmentation. in <a class="bbk">IJCNLP-2013</a> [<a href="https://www.aclweb.org/anthology/I13-1071.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/I13-1071.bib" class="lnk">bib</a>]
+					<li>Xiaojun Quan, Chunyu Kit, Yan Song. Non-Monotonic Sentence Alignment via Semisupervised Learning. in <a class="bbk">ACL-2013</a> [<a href="https://www.aclweb.org/anthology/P13-1061.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/P13-1061.bib" class="lnk">bib</a>]
+					<li>Yan Song, Prescott Klassen, Fei Xia, Chunyu Kit. Entropy-based Training Data Selection for Domain Adaptation. in <a class="bbk">COLING-2012</a> [<a href="https://www.aclweb.org/anthology/C12-2116.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/C12-2116.bib" class="lnk">bib</a>]
+					<li>Yan Song, Fei Xia. Using a Goodness Measurement for Domain Adaptation: A Case Study on Chinese Word Segmentation. in <a class="bbk">LREC-2012</a> [<a href="http://www.lrec-conf.org/proceedings/lrec2012/pdf/973_Paper.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/L12-1580.bib" class="lnk">bib</a>]
+					<li>Yan Song, Chang-Ning Huang, Chunyu Kit. Construction of Chinese CCGbank. in <a class="bbk">Journal of Chinese Information Processing</a>. 2012 [<a href="http://jcip.cipsc.org.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=1600" class="lnk">pdf</a>][<a href="bib/2012-jocip.bib" class="lnk">bib</a>]
+					<li>Yan Song, Chunyu Kit and Hai Zhao. Reranking with Multiple Features for Better Transliteration. in <a class="bbk">NEWS-2010</a> [<a href="https://www.aclweb.org/anthology/W10-2409.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W10-2409.bib" class="lnk">bib</a>]
+					<li>Hai Zhao, Yan Song and Chunyu Kit. How Large a Corpus Do We Need: Statistical Method Versus Rule-based Method. in <a class="bbk">LREC-2010</a> [<a href="http://www.lrec-conf.org/proceedings/lrec2010/pdf/199_Paper.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/L10-1134.bib" class="lnk">bib</a>]
+					<li>Hai Zhao, Yan Song, Chunyu Kit, Guodong Zhou. Cross Language Dependency Parsing using a Bilingual Lexicon. in <a class="bbk">ACL-2009</a> [<a href="https://www.aclweb.org/anthology/P09-1007.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/P09-1007.bib" class="lnk">bib</a>]
+					<li>Yan Song, Chunyu Kit, Xiao Chen. Transliteration of Name Entity via Improved Statistical Translation on Character Sequences. in <a class="bbk">NEWS-2009</a> [<a href="https://www.aclweb.org/anthology/W09-3511.pdf" class="lnk">pdf</a>][<a href="https://www.aclweb.org/anthology/W09-3511.bib" class="lnk">bib</a>]
+					<br>
+					<br>
+				</div>
+				
+				<div class="lnk" id="sft" style="display:none;">
+					<li><a href="https://github.com/sinovation/zen" class="lnk">ZEN</a></li>
+							ZEN is a BERT-based Chinese (<b>Z</b>) text encoder <b>E</b>nhanced by <b>N</b>-gram representations,
+							where different combinations of characters are considered during training.
+							The potential word or phrase boundaries are explicitly pre-trained and fine-tuned with the character encoder (BERT),
+							so that ZEN incorporates the comprehensive information of both the character sequence and words or phrases it contains.
+							Currently ZEN has been used in many Chinese NLP tasks and achieved the state-of-the-art performance, such as Chinese word segmentation and part-of-speech tagging.
+							More details can be found at <a href="https://github.com/sinovation/zen" class="lnk">here</a>.
+					<br>
+					<br>
+					<li><a href="https://github.com/svaigba/wmseg" class="lnk">WMSeg</a> and <a href="https://github.com/svaigba/twasp" class="lnk">TwASP</a></li>
+							WMSeg and TwASP are two projects on Chinese word segmentation (CWS) and part-of-speech (POS) tagging, corresponding to our two papers in <a class="bbk">ACL-2020</a>.
+							We use memory networks and two-way attentions to integrate automatic knowledge such as n-grams and auto-generated parsing results to faciliate CWS and POS tagging.
+							These projects can be used as references for sequence labeling tasks in NLP with knowledge incorporation.
+							Details can be found in the GitHub projects: <a href="https://github.com/svaigba/wmseg" class="lnk">WMSeg</a> and <a href="https://github.com/svaigba/twasp" class="lnk">TwASP</a>
+					<br>
+					<br>
+					<li><a href="https://www.aclweb.org/anthology/attachments/N18-2028.Software.zip" class="lnk">DSG</a></li>
+							This is the source code for training <a href="https://ai.tencent.com/ailab/nlp/en/embedding.html" class="lnk">Tencent large scale Chinese word embeddings</a>, with support of distinguishing left and right context when training skip-gram style word embeddings.
+							I know a lot of people argue that why there is no GitHub project hosting this code :-), but actually it was released in the first place with my <a href="https://www.aclweb.org/anthology/N18-2028" class="lnk">paper</a> published in <a class="bbk">NAACL-2018</a>.
+							Check the green button for SOFTWARE!
+				</div>
+				
+				<div class="lnk" id="tch" style="display:none;">
+					<li>CIE-6131</li>
+					Text Representation Learning, Spring 2020<br>
+					The Chinese University of Hong Kong, Shenzhen
+					<li>Ling-575F/G</li>
+					Topics in Computational Linguistics (Text Representation Learning), Spring 2019<br>
+					<a href="https://linguistics.washington.edu/courses/2019/spring/ling/575/f">https://linguistics.washington.edu/courses/2019/spring/ling/575/f</a><br>
+					University of Washington
+				</div>
+				
+				<div class="lnk" id="oth">
+				</div>
+				
+			</td>
+		</tr>
+	</table>
+	
+	<script type="text/javascript">
+		var navlist = ["int", "pub", "sft", "tch", "oth"];
+		function nav_click(nid){
+			var x;
+			for(x in navlist){
+				xid = navlist[x]
+				//alert(xid);
+				if(xid==nid) continue;
+				document.getElementById(xid).style.display="none";
+			}
+			document.getElementById(nid).style.display="block";
+		}
+	</script>
+	
 </body>
 </html>
+
